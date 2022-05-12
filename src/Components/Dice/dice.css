@@ -1,0 +1,191 @@
+.dice {
+  margin: 5px;
+  animation: spin 2s ease-out;
+  border: none;
+}
+
+.dice-locked {
+  opacity: 0.5;
+  text-shadow: none;
+}
+
+.dice-disabled {
+  cursor: not-allowed;
+  outline: none !important;
+}
+
+.roll {
+  padding: 1px;
+  background-color: rgb(207, 143, 24);
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border: none;
+  outline: none !important;
+  margin-bottom: 20px !important;
+}
+
+.pass {
+  padding: 1px;
+  background-color: rgb(46, 133, 46);
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.maindiv {
+  width: 500px;
+  position: relative;
+}
+
+p {
+  display: inline;
+  margin: 10px;
+}
+
+.turn {
+  display: block;
+  margin: 10px;
+}
+
+.disaled {
+  cursor: not-allowed;
+  padding: 1px;
+  background-color: rgb(77, 83, 83);
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.start-button {
+  padding: 1px;
+  background-color: rgb(46, 133, 46);
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  border: none;
+  outline: none !important;
+}
+
+.newgame-button {
+  padding: 10px;
+  background-color: #bb452b;
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  border: none;
+  outline: none !important;
+}
+
+.disaled-btn-dice {
+  padding: 4px;
+  background-color: rgb(77, 83, 83);
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  color: white;
+  font-size: 2rem;
+  cursor: not-allowed;
+}
+
+i {
+  color: rgb(71, 151, 255) !important;
+}
+
+a {
+  margin: 0.2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .maindiv {
+    width: 350px;
+    position: relative;
+  }
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.links-continer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.links-continer-after-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+@media only screen and (min-width: 900px) {
+  .links-continer {
+    margin-top: 4.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .links {
+    display: none !important;
+  }
+}
+
+.links {
+  font-size: 2.1rem;
+  margin: 0 0.7rem;
+}
+
+.link {
+  margin: 0 0.5rem;
+}
+
+.Links-p {
+  color: white;
+  font-size: 1.6rem;
+}
+.Links-p a {
+  color: white;
+  text-decoration: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dice-btn {
+  margin: 0.2rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.dice-btn:focus {
+  outline: none;
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Animated Dice 3D</title>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:About="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:title>Animated Rotating 3D object</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jarda</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>3D</rdf:li>
+            <rdf:li>animated</rdf:li>
+            <rdf:li>dice</rdf:li>
+            <rdf:li>object</rdf:li>
+            <rdf:li>rotating</rdf:li>
+            <rdf:li>volumetric</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Animated Rotating 3D object</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="animation_styles">
+    <style type="text/css">
+      @keyframes rotate360 {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+      @-moz-keyframes rotate360 {
+        from { -moz-transform: rotate(0deg); }
+        to   { -moz-transform: rotate(360deg); }
+      }
+      @-webkit-keyframes rotate360 {
+        from { -webkit-transform: rotate(0deg); }
+        to   { -webkit-transform: rotate(360deg); }
+      }
+
+      .rotate_vert {
+         animation: rotate360 5s linear infinite;
+        -moz-animation: rotate360 5s linear infinite;
+        -webkit-animation: rotate360 5s linear infinite;
+      }
+
+      .rotate_horiz {
+         animation: rotate360 5s linear infinite;
+         transform-origin: 50% 50%;
+        -moz-animation: rotate360 5s linear infinite;
+        -moz-transform-origin: 50% 50%;
+        -webkit-animation: rotate360 5s linear infinite;
+        -webkit-transform-origin: 50% 50%;
+      }
+
+      .object3D { stroke: #555555; fill: #eeeeee ; stroke-width: 1 }
+    </style>
+  </defs>
+  <defs id="slices">
+    <path d="M -40.3852 -35 L -40.3852 35 c 0 3.80789 3.80789 5.38516 5.38516 5.38516 L 35 40.3852 c 3.80789 0 5.38516 -3.80789 5.38516 -5.38516 L 40.3852 -35 c 0 -3.80789 -3.80789 -5.38516 -5.38516 -5.38516 L -35 -40.3852 c -3.80789 0 -5.38516 3.80789 -5.38516 5.38516 z M -5.7 -14.7 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 23.7 14.7 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z" id="slice1" transform="rotate (45)"/>
+    <path d="M -44 -35 L -44 35 c 0 6.36396 6.36396 9 9 9 L 35 44 c 6.36396 0 9 -6.36396 9 -9 L 44 -35 c 0 -6.36396 -6.36396 -9 -9 -9 L -35 -44 c -6.36396 0 -9 6.36396 -9 9 z M -5.7 -14.7 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 23.7 14.7 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z" id="slice2" transform="rotate (45)"/>
+    <path d="M -46.1803 -35 L -46.1803 35 c 0 7.90569 7.90569 11.1803 11.1803 11.1803 L 35 46.1803 c 7.90569 0 11.1803 -7.90569 11.1803 -11.1803 L 46.1803 -35 c 0 -7.90569 -7.90569 -11.1803 -11.1803 -11.1803 L -35 -46.1803 c -7.90569 0 -11.1803 7.90569 -11.1803 11.1803 z" id="slice3" transform="rotate (45)"/>
+    <path d="M -47.6886 -35 L -47.6886 35 c 0 8.97218 8.97218 12.6886 12.6886 12.6886 L 35 47.6886 c 8.97218 0 12.6886 -8.97218 12.6886 -12.6886 L 47.6886 -35 c 0 -8.97218 -8.97218 -12.6886 -12.6886 -12.6886 L -35 -47.6886 c -8.97218 0 -12.6886 8.97218 -12.6886 12.6886 z" id="slice4" transform="rotate (45)"/>
+    <path d="M -48.7477 -35 L -48.7477 35 c 0 9.72111 9.72111 13.7477 13.7477 13.7477 L 35 48.7477 c 9.72111 0 13.7477 -9.72111 13.7477 -13.7477 L 48.7477 -35 c 0 -9.72111 -9.72111 -13.7477 -13.7477 -13.7477 L -35 -48.7477 c -9.72111 0 -13.7477 9.72111 -13.7477 13.7477 z" id="slice5" transform="rotate (45)"/>
+    <path d="M -49.4568 -35 L -49.4568 35 c 0 10.2225 10.2225 14.4568 14.4568 14.4568 L 35 49.4568 c 10.2225 0 14.4568 -10.2225 14.4568 -14.4568 L 49.4568 -35 c 0 -10.2225 -10.2225 -14.4568 -14.4568 -14.4568 L -35 -49.4568 c -10.2225 0 -14.4568 10.2225 -14.4568 14.4568 z" id="slice6" transform="rotate (45)"/>
+    <path d="M -49.8661 -35 L -49.8661 35 c 0 10.5119 10.5119 14.8661 14.8661 14.8661 L 35 49.8661 c 10.5119 0 14.8661 -10.5119 14.8661 -14.8661 L 49.8661 -35 c 0 -10.5119 -10.5119 -14.8661 -14.8661 -14.8661 L -35 -49.8661 c -10.5119 0 -14.8661 10.5119 -14.8661 14.8661 z" id="slice7" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice8" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -27.4116 h 3 v 8.62322 h -3 L -50 18.7884 h 3 v 8.62322 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -27.4116 50 v -3 h 8.62322 v 3 L 18.7884 50 v -3 h 8.62322 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 27.4116 h -3 v -8.62322 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice9" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -29.8963 h 3 v 13.5926 h -3 L -50 16.3037 h 3 v 13.5926 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -29.8963 50 v -3 h 13.5926 v 3 L 16.3037 50 v -3 h 13.5926 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 29.8963 h -3 v -13.5926 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice10" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.2111 h 3 v 16.2222 h -3 L -50 14.9889 h 3 v 16.2222 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.2111 50 v -3 h 16.2222 v 3 L 14.9889 50 v -3 h 16.2222 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 31.2111 h -3 v -16.2222 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice11" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.8972 h 3 v 17.5943 h -3 L -50 14.3028 h 3 v 17.5943 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.8972 50 v -3 h 17.5943 v 3 L 14.3028 50 v -3 h 17.5943 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 31.8972 h -3 v -17.5943 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice12" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -32.0994 h 3 v 17.9989 h -3 L -50 14.1006 h 3 v 17.9989 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -32.0994 50 v -3 h 17.9989 v 3 L 14.1006 50 v -3 h 17.9989 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 32.0994 h -3 v -17.9989 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice13" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.8516 h 3 v 17.5031 h -3 L -50 14.3484 h 3 v 17.5031 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.8516 50 v -3 h 17.5031 v 3 L 14.3484 50 v -3 h 17.5031 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 31.8516 h -3 v -17.5031 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice14" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.1119 h 3 v 16.0237 h -3 L -50 15.0881 h 3 v 16.0237 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.1119 50 v -3 h 16.0237 v 3 L 15.0881 50 v -3 h 16.0237 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 31.1119 h -3 v -16.0237 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice15" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -29.7174 h 3 v 13.2348 h -3 L -50 16.4826 h 3 v 13.2348 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -29.7174 50 v -3 h 13.2348 v 3 L 16.4826 50 v -3 h 13.2348 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 29.7174 h -3 v -13.2348 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice16" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -27.023 h 3 v 7.84602 h -3 L -50 19.177 h 3 v 7.84602 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -27.023 50 v -3 h 7.84602 v 3 L 19.177 50 v -3 h 7.84602 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 27.023 h -3 v -7.84602 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice17" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L -23.1 50 L 23.1 50 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -0 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -0 -50 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice18" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L -28.7569 50 v -3 h 11.3137 v 3 L 17.4431 50 v -3 h 11.3137 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 5.65685 h -3 v -11.3137 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L 5.65685 -50 v 3 h -11.3137 v -3 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice19" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L -30.5833 50 v -3 h 14.9666 v 3 L 15.6167 50 v -3 h 14.9666 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 7.48331 h -3 v -14.9666 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L 7.48331 -50 v 3 h -14.9666 v -3 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice20" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.5853 50 v -3 h 16.9706 v 3 L 14.6147 50 v -3 h 16.9706 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 8.48528 h -3 v -16.9706 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L 8.48528 -50 v 3 h -16.9706 v -3 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice21" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 35 c 0 10.6066 10.6066 15 15 15 L -32.0443 50 v -3 h 17.8885 v 3 L 14.1557 50 v -3 h 17.8885 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 8.94427 h -3 v -17.8885 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L 8.94427 -50 v 3 h -17.8885 v -3 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice22" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -27.023 h 3 v 7.84602 h -3 L -50 19.177 h 3 v 7.84602 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -27.023 50 v -3 h 7.84602 v 3 L 19.177 50 v -3 h 7.84602 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -19.177 h -3 v -7.84602 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice23" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -29.7174 h 3 v 13.2348 h -3 L -50 16.4826 h 3 v 13.2348 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -29.7174 50 v -3 h 13.2348 v 3 L 16.4826 50 v -3 h 13.2348 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -16.4826 h -3 v -13.2348 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice24" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.1119 h 3 v 16.0237 h -3 L -50 15.0881 h 3 v 16.0237 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.1119 50 v -3 h 16.0237 v 3 L 15.0881 50 v -3 h 16.0237 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -15.0881 h -3 v -16.0237 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice25" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.8516 h 3 v 17.5031 h -3 L -50 14.3484 h 3 v 17.5031 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.8516 50 v -3 h 17.5031 v 3 L 14.3484 50 v -3 h 17.5031 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -14.3484 h -3 v -17.5031 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice26" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -32.0994 h 3 v 17.9989 h -3 L -50 14.1006 h 3 v 17.9989 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -32.0994 50 v -3 h 17.9989 v 3 L 14.1006 50 v -3 h 17.9989 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -14.1006 h -3 v -17.9989 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice27" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.8972 h 3 v 17.5943 h -3 L -50 14.3028 h 3 v 17.5943 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.8972 50 v -3 h 17.5943 v 3 L 14.3028 50 v -3 h 17.5943 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -14.3028 h -3 v -17.5943 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice28" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -31.2111 h 3 v 16.2222 h -3 L -50 14.9889 h 3 v 16.2222 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -31.2111 50 v -3 h 16.2222 v 3 L 14.9889 50 v -3 h 16.2222 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -14.9889 h -3 v -16.2222 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice29" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -29.8963 h 3 v 13.5926 h -3 L -50 16.3037 h 3 v 13.5926 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -29.8963 50 v -3 h 13.5926 v 3 L 16.3037 50 v -3 h 13.5926 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -16.3037 h -3 v -13.5926 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice30" transform="rotate (45)"/>
+    <path d="M -50 -35 L -50 -27.4116 h 3 v 8.62322 h -3 L -50 18.7884 h 3 v 8.62322 h -3 L -50 35 c 0 10.6066 10.6066 15 15 15 L -27.4116 50 v -3 h 8.62322 v 3 L 18.7884 50 v -3 h 8.62322 v 3 L 35 50 c 10.6066 0 15 -10.6066 15 -15 L 50 -18.7884 h -3 v -8.62322 h 3 L 50 -35 c 0 -10.6066 -10.6066 -15 -15 -15 L -35 -50 c -10.6066 0 -15 10.6066 -15 15 z" id="slice31" transform="rotate (45)"/>
+    <path d="M -44 -35 L -44 35 c 0 6.36396 6.36396 9 9 9 L 35 44 c 6.36396 0 9 -6.36396 9 -9 L 44 -35 c 0 -6.36396 -6.36396 -9 -9 -9 L -35 -44 c -6.36396 0 -9 6.36396 -9 9 z M -14.1 -23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 32.1 -23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 9 0 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M -14.1 23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 32.1 23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z" id="slice32" transform="rotate (45)"/>
+    <path d="M -40.3852 -35 L -40.3852 35 c 0 3.80789 3.80789 5.38516 5.38516 5.38516 L 35 40.3852 c 3.80789 0 5.38516 -3.80789 5.38516 -5.38516 L 40.3852 -35 c 0 -3.80789 -3.80789 -5.38516 -5.38516 -5.38516 L -35 -40.3852 c -3.80789 0 -5.38516 3.80789 -5.38516 5.38516 z M -14.1 -23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 32.1 -23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 9 0 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M -14.1 23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z M 32.1 23.1 a 9 9 0 0 1 -9 9 a 9 9 0 0 1 -9 -9 a 9 9 0 0 1 9 -9 a 9 9 0 0 1 9 9 z" id="slice33" transform="rotate (45)"/>
+  </defs>
+  <g class="rotate_horiz" id="object3D">
+    <g class="object3D" transform="translate (100 100) scale (1 0.5)">
+      <g id="layer1" transform="translate (0 84.8705)">
+        <use class="rotate_vert" xlink:href="#slice1"/>
+      </g>
+      <g id="layer2" transform="translate (0 81.4064)">
+        <use class="rotate_vert" xlink:href="#slice2"/>
+      </g>
+      <g id="layer3" transform="translate (0 77.9423)">
+        <use class="rotate_vert" xlink:href="#slice3"/>
+      </g>
+      <g id="layer4" transform="translate (0 74.4782)">
+        <use class="rotate_vert" xlink:href="#slice4"/>
+      </g>
+      <g id="layer5" transform="translate (0 71.0141)">
+        <use class="rotate_vert" xlink:href="#slice5"/>
+      </g>
+      <g id="layer6" transform="translate (0 67.55)">
+        <use class="rotate_vert" xlink:href="#slice6"/>
+      </g>
+      <g id="layer7" transform="translate (0 64.0859)">
+        <use class="rotate_vert" xlink:href="#slice7"/>
+      </g>
+      <g id="layer8" transform="translate (0 60.6218)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer9" transform="translate (0 57.1577)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer10" transform="translate (0 53.6936)">
+        <use class="rotate_vert" xlink:href="#slice9"/>
+      </g>
+      <g id="layer11" transform="translate (0 50.2295)">
+        <use class="rotate_vert" xlink:href="#slice10"/>
+      </g>
+      <g id="layer12" transform="translate (0 46.7654)">
+        <use class="rotate_vert" xlink:href="#slice11"/>
+      </g>
+      <g id="layer13" transform="translate (0 43.3013)">
+        <use class="rotate_vert" xlink:href="#slice12"/>
+      </g>
+      <g id="layer14" transform="translate (0 39.8372)">
+        <use class="rotate_vert" xlink:href="#slice13"/>
+      </g>
+      <g id="layer15" transform="translate (0 36.3731)">
+        <use class="rotate_vert" xlink:href="#slice14"/>
+      </g>
+      <g id="layer16" transform="translate (0 32.909)">
+        <use class="rotate_vert" xlink:href="#slice15"/>
+      </g>
+      <g id="layer17" transform="translate (0 29.4449)">
+        <use class="rotate_vert" xlink:href="#slice16"/>
+      </g>
+      <g id="layer18" transform="translate (0 25.9808)">
+        <use class="rotate_vert" xlink:href="#slice17"/>
+      </g>
+      <g id="layer19" transform="translate (0 22.5167)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer20" transform="translate (0 19.0526)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer21" transform="translate (0 15.5885)">
+        <use class="rotate_vert" xlink:href="#slice18"/>
+      </g>
+      <g id="layer22" transform="translate (0 12.1244)">
+        <use class="rotate_vert" xlink:href="#slice19"/>
+      </g>
+      <g id="layer23" transform="translate (0 8.66025)">
+        <use class="rotate_vert" xlink:href="#slice20"/>
+      </g>
+      <g id="layer24" transform="translate (0 5.19615)">
+        <use class="rotate_vert" xlink:href="#slice21"/>
+      </g>
+      <g id="layer25" transform="translate (0 1.73205)">
+        <use class="rotate_vert" xlink:href="#slice22"/>
+      </g>
+      <g id="layer26" transform="translate (0 -1.73205)">
+        <use class="rotate_vert" xlink:href="#slice22"/>
+      </g>
+      <g id="layer27" transform="translate (0 -5.19615)">
+        <use class="rotate_vert" xlink:href="#slice21"/>
+      </g>
+      <g id="layer28" transform="translate (0 -8.66025)">
+        <use class="rotate_vert" xlink:href="#slice20"/>
+      </g>
+      <g id="layer29" transform="translate (0 -12.1244)">
+        <use class="rotate_vert" xlink:href="#slice19"/>
+      </g>
+      <g id="layer30" transform="translate (0 -15.5885)">
+        <use class="rotate_vert" xlink:href="#slice18"/>
+      </g>
+      <g id="layer31" transform="translate (0 -19.0526)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer32" transform="translate (0 -22.5167)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer33" transform="translate (0 -25.9808)">
+        <use class="rotate_vert" xlink:href="#slice23"/>
+      </g>
+      <g id="layer34" transform="translate (0 -29.4449)">
+        <use class="rotate_vert" xlink:href="#slice24"/>
+      </g>
+      <g id="layer35" transform="translate (0 -32.909)">
+        <use class="rotate_vert" xlink:href="#slice25"/>
+      </g>
+      <g id="layer36" transform="translate (0 -36.3731)">
+        <use class="rotate_vert" xlink:href="#slice26"/>
+      </g>
+      <g id="layer37" transform="translate (0 -39.8372)">
+        <use class="rotate_vert" xlink:href="#slice27"/>
+      </g>
+      <g id="layer38" transform="translate (0 -43.3013)">
+        <use class="rotate_vert" xlink:href="#slice28"/>
+      </g>
+      <g id="layer39" transform="translate (0 -46.7654)">
+        <use class="rotate_vert" xlink:href="#slice29"/>
+      </g>
+      <g id="layer40" transform="translate (0 -50.2295)">
+        <use class="rotate_vert" xlink:href="#slice30"/>
+      </g>
+      <g id="layer41" transform="translate (0 -53.6936)">
+        <use class="rotate_vert" xlink:href="#slice31"/>
+      </g>
+      <g id="layer42" transform="translate (0 -57.1577)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer43" transform="translate (0 -60.6218)">
+        <use class="rotate_vert" xlink:href="#slice8"/>
+      </g>
+      <g id="layer44" transform="translate (0 -64.0859)">
+        <use class="rotate_vert" xlink:href="#slice7"/>
+      </g>
+      <g id="layer45" transform="translate (0 -67.55)">
+        <use class="rotate_vert" xlink:href="#slice6"/>
+      </g>
+      <g id="layer46" transform="translate (0 -71.0141)">
+        <use class="rotate_vert" xlink:href="#slice5"/>
+      </g>
+      <g id="layer47" transform="translate (0 -74.4782)">
+        <use class="rotate_vert" xlink:href="#slice4"/>
+      </g>
+      <g id="layer48" transform="translate (0 -77.9423)">
+        <use class="rotate_vert" xlink:href="#slice3"/>
+      </g>
+      <g id="layer49" transform="translate (0 -81.4064)">
+        <use class="rotate_vert" xlink:href="#slice32"/>
+      </g>
+      <g id="layer50" transform="translate (0 -84.8705)">
+        <use class="rotate_vert" xlink:href="#slice33"/>
+      </g>
+    </g>
+  </g>
+</svg>

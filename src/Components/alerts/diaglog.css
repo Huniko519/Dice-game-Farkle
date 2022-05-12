@@ -1,0 +1,20 @@
+.instructions-button {
+  padding: 1px;
+  background-color: #4caf50 !important;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px !important;
+  color: white !important;
+  font-size: 30px !important;
+  margin-top: 1rem !important;
+  outline: none !important;
+  /* border: none !important; */
+}
+.instructions-button :checked {
+  outline: none;
+}
+.dialog-btn {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

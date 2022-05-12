@@ -1,0 +1,27 @@
+body {
+}
+.App {
+  text-align: center;
+}
+
+.dice-continer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.App-header {
+  background-color: #0c0c0d;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
